@@ -561,21 +561,12 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    image: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::product.product'
     >;
-    media: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    > &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     price: Schema.Attribute.Integer & Schema.Attribute.Required;
     product_id: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;

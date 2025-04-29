@@ -25,22 +25,6 @@
         }
       }
     },
-    "media": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "product_id": {
       "type": "uid",
       "required": true,
@@ -57,6 +41,10 @@
     },
     "price": {
       "type": "integer",
+      "required": true
+    },
+    "image": {
+      "type": "string",
       "required": true
     }
   }
