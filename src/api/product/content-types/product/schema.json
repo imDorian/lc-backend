@@ -44,18 +44,15 @@
       "required": true
     },
     "image": {
-      "type": "string",
-      "required": true
-    },
-    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
