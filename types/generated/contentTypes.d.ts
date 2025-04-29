@@ -562,6 +562,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         };
       }>;
     image: Schema.Attribute.String & Schema.Attribute.Required;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
